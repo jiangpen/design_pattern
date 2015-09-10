@@ -32,3 +32,4 @@ In this practice, I use C++ to implement below pattern:
 
 *Mediator
 
+
