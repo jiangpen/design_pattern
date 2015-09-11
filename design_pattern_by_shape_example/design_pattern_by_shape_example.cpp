@@ -11,6 +11,7 @@
 #include "adaptor.h"
 #include "composite.h"
 #include "Decorator.h"
+#include "basic.h"
 /*
 singleton//only create a single instance
 abstractfactory//goal: to create different instance dynamically with different parameter
@@ -33,12 +34,15 @@ Mediator
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+
+	
 	patten_tester * tester=new patten_tester();
 	tester->register_case(singleton::getinstance());
 	tester->register_case(new abstractfactory());
 	tester->register_case(new adaptor());
 	tester->register_case(new composite());
 	tester->register_case(new Decorator());
+	tester->register_case(new basic());
 	tester->run();
 	getchar();
 	return 0;
